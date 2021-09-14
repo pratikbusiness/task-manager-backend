@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "supervisor index.js",
+    "pm2-kill": "pm2 kill",
+    "pm2-list": "pm2 list",
+    "start": "pm2-runtime start ecosystem.config.js --env production"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.5",
+    "pm2": "^5.1.1"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  }
+}
